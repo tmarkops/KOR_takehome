@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15.4-alpine3.18
+    restart: always
+    environment:
+      POSTGRES_USER: postgresi
+      POSTGRES_PASSWORD: postgresi
+      POSTGRES_DB: local
+    ports:
+      - '5001:5432'
+    volumes:
+      - ./postgres/data:/var/lib/postgresql/data
