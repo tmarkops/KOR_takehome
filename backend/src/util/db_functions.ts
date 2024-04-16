@@ -31,8 +31,36 @@ export const createUser = async (username: string) => {
       username: username,
     })
     .returning(["id", "username", "status"])
-    .execute();
+    .executeTakeFirst();
   return user;
+};
+
+export const updateStatus = async ({
+  userId,
+  status,
+}: {
+  userId: number;
+  status: string;
+}) => {
+  await db
+    .updateTable("user")
+    .set({
+      status: status,
+    })
+    .where("id", "=", userId)
+    .returning(["id", "username", "status"])
+    .executeTakeFirst();
+
+  const updateStatusEntry = await db
+    .insertInto("status_update")
+    .values({
+      content: status,
+      user_id: userId,
+    })
+    .returning(["content", "user_id"])
+    .executeTakeFirst();
+
+  return updateStatusEntry;
 };
 
 export const getFriendsByUserId = async (userId: number) => {
@@ -208,7 +236,7 @@ export const createNotification = async ({
       break;
   }
 
-  const notification = await db
+  await db
     .insertInto("notification")
     .values({
       user_id: receiverUserId,
@@ -216,4 +244,41 @@ export const createNotification = async ({
       message: messageBody,
     })
     .execute();
+};
+
+export const createStatusUpdateNotifications = async (userId: number) => {
+  const curUser = await getUserByUserId(userId);
+  if (!curUser) {
+    throw new Error();
+  }
+  const friends = await getFriendsByUserId(userId);
+
+  await db
+    .insertInto("notification")
+    .values(
+      friends.map((friend) => {
+        return {
+          type: "status_update",
+          user_id: friend.id,
+          message: `${curUser.username} updated their status`,
+        };
+      }),
+    )
+    .execute();
+};
+
+export const getStatusUpdatesByUserId = async (userId: number) => {
+  const friends = await getFriendsByUserId(userId);
+  const friendsUserIds = friends.map((friend) => friend.id);
+  const statusUpdates = await db
+    .selectFrom("status_update")
+    .innerJoin("user", (join) =>
+      join.onRef("status_update.user_id", "=", "user.id"),
+    )
+    .where("user_id", "in", friendsUserIds)
+    .orderBy("status_update.created_at desc")
+    .select(["status_update.content", "status_update.user_id", "user.username"])
+    .execute();
+
+  return statusUpdates;
 };

@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Home } from "./Components/Home/Home";
 import { Header } from "./Components/Header/Header";
 import { useAppSelector } from "./store/hooks";
 import { LoginModal } from "./Modals/Login/LoginModal";
@@ -12,6 +11,7 @@ import { Polling } from "./Components/Polling";
 import { Notifications } from "./Components/Notifications/Notifications";
 import { Friends } from "./Components/Friends/Friends";
 import { FriendFeed } from "./Components/Friends/FriendFeed";
+import { Feed } from "./Components/Feed/Feed";
 
 function App() {
   const curModal = useAppSelector((state) => state.modal);
@@ -24,11 +24,9 @@ function App() {
         <div className={"overflow-scroll w-full h-full"}>
           <Routes>
             <Route path={"/"} element={<Users />} />
-            <Route path={"/friends"} element={<Friends />}>
-              <Route path={"friends/:id"} element={<FriendFeed />} />
-            </Route>
+            <Route path={"/friends"} element={<Friends />} />
             <Route path={"/notifications"} element={<Notifications />} />
-            <Route path={"/feed"} element={<Home />} />
+            <Route path={"/feed"} element={<Feed />} />
           </Routes>
         </div>
         <Polling />

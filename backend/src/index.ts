@@ -3,14 +3,17 @@ import dotenv from "dotenv";
 import {
   createFriendRequest,
   createNotification,
+  createStatusUpdateNotifications,
   createUser,
   getAllUsers,
   getFriendsByUserId,
   getIncomingFriendRequests,
   getNotifications,
   getOutgoingFriendRequests,
+  getStatusUpdatesByUserId,
   getUserByUsername,
   respondFriendRequest,
+  updateStatus,
 } from "./util/db_functions";
 import cors from "cors";
 
@@ -61,13 +64,43 @@ app.post(
       return res.status(201).send({
         success: true,
         message: "User created successfully",
-        user: newUser[0],
+        user: newUser,
       });
     } catch (error) {
       // Send an error response if user creation fails
       res.status(500).send({
         success: false,
         message: "Error creating user",
+        error: (error as Error).message,
+      });
+    }
+  },
+);
+
+app.get("/users/status/:userId", async (req: Request, res: Response) => {
+  const userId = req.params.userId;
+
+  const statusUpdates = await getStatusUpdatesByUserId(parseInt(userId));
+  res.status(200).send(statusUpdates);
+});
+
+app.put(
+  "/users/status",
+  async (req: Request<{ userId: number; status: string }>, res: Response) => {
+    try {
+      const { userId, status } = req.body;
+      const updatedStatus = updateStatus({ userId: userId, status: status });
+      await createStatusUpdateNotifications(userId);
+
+      return res.status(204).send({
+        success: true,
+        message: "Status updated successfully",
+        // user: newUser[0],
+      });
+    } catch (error) {
+      res.status(500).send({
+        success: false,
+        message: "Error updating status",
         error: (error as Error).message,
       });
     }

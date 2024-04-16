@@ -4,6 +4,7 @@ import {
   useGetIncomingFriendRequestsQuery,
   useGetNotificationsQuery,
   useGetOutgoingFriendRequestsQuery,
+  useGetStatusUpdatesQuery,
 } from "../store/services/api";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { RootState } from "../store/store";
@@ -14,6 +15,7 @@ import {
   setOutgoingRequests,
 } from "../store/features/friends/friendsSlice";
 import { setNotifications } from "../store/features/notifications/notificationsSlice";
+import { setFeed } from "../store/features/feed/feedSlice";
 
 export const Polling = () => {
   const user = useAppSelector((state: RootState) => state.user);
@@ -26,6 +28,9 @@ export const Polling = () => {
     user.id ?? skipToken,
   );
   const { data: notifications } = useGetNotificationsQuery(
+    user.id ?? skipToken,
+  );
+  const { data: statusUpdates } = useGetStatusUpdatesQuery(
     user.id ?? skipToken,
   );
 
@@ -45,7 +50,16 @@ export const Polling = () => {
     if (notifications) {
       dispatch(setNotifications(notifications));
     }
-  }, [friendsData, outgoingRequests, incomingRequests, notifications]);
+    if (statusUpdates) {
+      dispatch(setFeed(statusUpdates));
+    }
+  }, [
+    friendsData,
+    outgoingRequests,
+    incomingRequests,
+    notifications,
+    statusUpdates,
+  ]);
 
   return null;
 };

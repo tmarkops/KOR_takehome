@@ -15,7 +15,7 @@ export const FriendsHeader = ({
         `}
         onClick={() => setRequestsToggle("friends")}
       >
-        <p>See Friends</p>
+        <p>Your Friends</p>
       </div>
       <div
         className={`flex-1 flex items-center rounded-md justify-center bg-gray-100,

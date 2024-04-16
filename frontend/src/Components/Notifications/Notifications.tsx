@@ -13,8 +13,8 @@ export const Notifications = () => {
       >
         <h1 className={"text-2xl font-bold"}>Notifications</h1>
       </div>
-      {notifications.map((notif) => (
-        <NotificationRow notification={notif} />
+      {notifications.map((notif, i) => (
+        <NotificationRow key={i} notification={notif} />
       ))}
     </div>
   );

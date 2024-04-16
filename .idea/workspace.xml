@@ -5,91 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de12244f-0d77-4d90-ae4a-dd9e75b1a0ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendRequestCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendRequests.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendRow.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendsHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/RespondFriendRequestButtons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/FriendFeed.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/Friends.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Notifications/Components/NotificationRow.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Notifications/Notifications.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/features/notifications/notificationsSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Feed/Components/FeedBox.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Feed/Components/StatusRow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Feed/Components/UpdateStatusBox.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Feed/Feed.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/features/feed/feedSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/migrations/1713137175530_initial-migration.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/migrations/1713137175530_initial-migration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/kysely-codegen/dist/db.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/kysely-codegen/dist/db.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/1247" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/1247" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/1249" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/1249" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/1259" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/1259" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/1259_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/1259_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/1259_vm" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/1259_vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/16387" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/16387" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/16388" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/16388" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/16392" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/16392" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2224" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2224" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2579" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2579" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2604" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2604" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2606" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2606" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2608" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2608" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2608_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2608_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2609" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2609" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2610" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2610" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2610_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2610_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2619" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2619" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2619_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2619_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2619_vm" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2619_vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2620" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2620" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2656" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2656" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2657" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2657" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2658" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2658" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2659" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2659" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2662" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2662" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2663" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2663" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2664" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2664" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2665" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2665" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2666" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2666" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2667" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2667" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2673" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2673" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2674" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2674" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2678" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2678" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2679" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2679" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2696" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2696" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2699" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2699" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2701" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2701" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2702" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2702" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2703" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2703" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2704" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2704" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/3455" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/3455" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/3501" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/3501" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/3502" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/3502" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/3503" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/3503" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/3534" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/3534" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/5002" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/5002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/pg_internal.init" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/postgres/data/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/global/pg_control" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/postgres/data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/postgres/data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/pg_xact/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/util/db_functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/util/db_functions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/10.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/2.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/3.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/4.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/5.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/6.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/8.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/9.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/tsconfig.tsbuildinfo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendRow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendsHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendsHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Home/Home.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Notifications/Notifications.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Notifications/Notifications.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/Polling.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Polling.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Sidebar/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Modals/User/Components/AddFriendButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Modals/User/Components/AddFriendButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/features/friends/friendsSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/features/friends/friendsSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Modals/Login/LoginModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Modals/Login/LoginModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/features/user/userSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/features/user/userSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/services/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/services/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/types/types.ts" afterDir="false" />
@@ -172,7 +107,7 @@
       <workItem from="1713164525876" duration="3136000" />
       <workItem from="1713195833285" duration="22030000" />
       <workItem from="1713224862536" duration="255000" />
-      <workItem from="1713225119218" duration="12905000" />
+      <workItem from="1713225119218" duration="22630000" />
     </task>
     <servers />
   </component>

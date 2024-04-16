@@ -28,6 +28,7 @@ export const LoginModal = () => {
       setUser({
         id: result.data.id,
         username: result.data.username,
+        status: result.data.status,
       }),
     );
     dispatch(closeModal());

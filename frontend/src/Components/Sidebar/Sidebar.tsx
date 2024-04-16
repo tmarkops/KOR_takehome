@@ -7,6 +7,9 @@ export const Sidebar = () => {
       <Link to={"/"}>
         <SidebarButton label={"Explore"} />
       </Link>
+      <Link to={"/feed"}>
+        <SidebarButton label={"Feed"} />
+      </Link>
       <Link to={"/friends"}>
         <SidebarButton label={"Friends"} />
       </Link>
