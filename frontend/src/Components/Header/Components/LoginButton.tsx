@@ -8,11 +8,13 @@ export const LoginButton = () => {
   return (
     <div className={"max-w-24 w-full h-full flex items-center"}>
       <button
-        className={"w-full h-8 bg-gray-400 rounded-md border-2 border-gray-600"}
+        className={
+          "w-full h-8  rounded-md border-1 border-neutral-200 hover:bg-blue-300"
+        }
         type={"button"}
         onClick={() => dispatch(openLoginModal())}
       >
-        <p>Login</p>
+        <p className={"text-white"}>Login</p>
       </button>
     </div>
   );

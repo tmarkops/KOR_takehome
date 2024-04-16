@@ -61,7 +61,7 @@ export const LoginModal = () => {
           onChange={(event) => setCurText(event.target.value)}
         />
         <button className={"w-36 h-10 rounded-lg bg-blue-600"} onClick={submit}>
-          <p>Login / Sign Up</p>
+          <p className={"text-white"}>Login / Sign Up</p>
         </button>
       </div>
     </div>

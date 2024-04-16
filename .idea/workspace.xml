@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de12244f-0d77-4d90-ae4a-dd9e75b1a0ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2619" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2619" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/global/pg_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/pg_wal/000000010000000000000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/postgres/data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/pg_xact/0000" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendRequests.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendRequests.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Friends/Friends.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/Friends.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Polling.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Polling.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Users/Components/UserRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Users/Components/UserRow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Header/Components/LoggedInButtons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Header/Components/LoggedInButtons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Header/Components/LoginButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Header/Components/LoginButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Modals/Login/LoginModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Modals/Login/LoginModal.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/assets" />
       <recent name="$PROJECT_DIR$/frontend/src/Components" />
       <recent name="$PROJECT_DIR$/frontend/src" />
       <recent name="$PROJECT_DIR$/frontend" />
@@ -95,7 +95,7 @@
       <workItem from="1713224862536" duration="255000" />
       <workItem from="1713225119218" duration="24117000" />
       <workItem from="1713287621410" duration="457000" />
-      <workItem from="1713288091636" duration="11425000" />
+      <workItem from="1713288091636" duration="12609000" />
     </task>
     <servers />
   </component>
