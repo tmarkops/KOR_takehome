@@ -9,6 +9,10 @@
 #db
 /backend/postgres
 
+# IDE
+.idea
+backend/.idea
+
 # testing
 /coverage
 
