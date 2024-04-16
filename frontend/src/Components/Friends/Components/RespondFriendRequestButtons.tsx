@@ -1,10 +1,6 @@
 import { User } from "../../../types/types";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
-import {
-  useGetFriendsQuery,
-  useRespondFriendRequestMutation,
-} from "../../../store/services/api";
-import { skipToken } from "@reduxjs/toolkit/dist/query/react";
+import { useRespondFriendRequestMutation } from "../../../store/services/api";
 import {
   addFriend,
   deleteIncomingRequest,

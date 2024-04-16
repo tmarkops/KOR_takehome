@@ -16,6 +16,7 @@ export const UserRow = ({ user }: { user: User }) => {
         {/*<div className={"flex-1 w-full h-full flex items-center"}>*/}
         <img
           className={"h-20 w-20 rounded-full"}
+          alt={"User"}
           src={require("../../../assets/TempUserImage.jpeg")}
         />
         {/*</div>*/}

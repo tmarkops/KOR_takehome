@@ -1,5 +1,4 @@
 import { User } from "../../../types/types";
-import { Link } from "react-router-dom";
 import { RespondFriendRequestButtons } from "./RespondFriendRequestButtons";
 
 export const FriendRequestCard = ({ user }: { user: User }) => {
@@ -11,6 +10,7 @@ export const FriendRequestCard = ({ user }: { user: User }) => {
     >
       <img
         className={"h-3/6 w-full rounded-lg"}
+        alt={"User"}
         src={require("../../../assets/TempUserImage.jpeg")}
       />
       <p>{user.username}</p>

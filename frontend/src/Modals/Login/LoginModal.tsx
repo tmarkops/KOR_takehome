@@ -31,7 +31,7 @@ export const LoginModal = () => {
       );
       dispatch(closeModal());
     }
-  }, [result.isSuccess]);
+  }, [result.isSuccess, dispatch, result.data]);
 
   return (
     <div
@@ -55,7 +55,7 @@ export const LoginModal = () => {
         <p>Enter your username:</p>
         <input
           className={
-            "border-4 border-gray-600 rounded-lg w-2/6 h-10 px-3 cursor-text"
+            "border-2 border-gray-600 rounded-lg w-2/6 h-10 px-3 cursor-text"
           }
           value={curText}
           onChange={(event) => setCurText(event.target.value)}

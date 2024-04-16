@@ -6,15 +6,15 @@ export const LoginButton = () => {
   const dispatch = useAppDispatch();
 
   return (
-    <div className={"max-w-24 w-full h-full flex items-center"}>
+    <div className={"h-full flex items-center"}>
       <button
         className={
-          "w-full h-8  rounded-md border-1 border-neutral-200 hover:bg-blue-300"
+          "px-2 h-8  rounded-md border-1 border-neutral-200 hover:bg-blue-300"
         }
         type={"button"}
         onClick={() => dispatch(openLoginModal())}
       >
-        <p className={"text-white"}>Login</p>
+        <p className={"text-white"}>Login / Sign Up</p>
       </button>
     </div>
   );

@@ -1,5 +1,4 @@
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
-import { setUser } from "../../../store/features/user/userSlice";
 
 export const LoggedInButtons = () => {
   const username = useAppSelector((state) => state.user.username);

@@ -4,12 +4,6 @@ import { AddFriendButton } from "./Components/AddFriendButton";
 
 export const UserModal = () => {
   const curModal = useAppSelector((state) => state.modal);
-  const outgoingFriendRequests = useAppSelector(
-    (state) => state.friends.outgoingRequests,
-  );
-  const incomingFriendRequests = useAppSelector(
-    (state) => state.friends.incomingRequests,
-  );
 
   const dispatch = useAppDispatch();
 
@@ -38,6 +32,7 @@ export const UserModal = () => {
         </button>
         <img
           className={"h-4/12 w-4/12"}
+          alt={"User"}
           src={require("../../assets/TempUserImage.jpeg")}
         />
         <h1>{curModal.user.username}</h1>

@@ -1,11 +1,7 @@
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import { addOutgoingRequest } from "../../../store/features/friends/friendsSlice";
 import { User } from "../../../types/types";
-import {
-  useCreateFriendRequestMutation,
-  useGetFriendsQuery,
-} from "../../../store/services/api";
-import { skipToken } from "@reduxjs/toolkit/dist/query/react";
+import { useCreateFriendRequestMutation } from "../../../store/services/api";
 import {
   closeModal,
   openLoginModal,
@@ -24,7 +20,7 @@ export const AddFriendButton = ({ recipientUser }: { recipientUser: User }) => {
     (state) => state.friends.incomingRequests,
   );
   const dispatch = useAppDispatch();
-  const [createFriendRequest, result] = useCreateFriendRequestMutation();
+  const [createFriendRequest] = useCreateFriendRequestMutation();
 
   const alreadySentFriendRequest = userExistsInUserArray(
     recipientUser,

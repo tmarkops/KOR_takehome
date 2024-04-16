@@ -1,6 +1,5 @@
 import { useAppSelector } from "../../../store/hooks";
 import { FriendRequestCard } from "./FriendRequestCard";
-import { useEffect } from "react";
 
 export const FriendRequests = () => {
   const incomingFriendRequests = useAppSelector(

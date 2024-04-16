@@ -1,5 +1,4 @@
 import { User } from "../../../types/types";
-import { Link } from "react-router-dom";
 
 export const FriendRow = ({ friend }: { friend: User }) => {
   return (
@@ -11,6 +10,7 @@ export const FriendRow = ({ friend }: { friend: User }) => {
       >
         <img
           className={"h-20 w-20"}
+          alt={"User"}
           src={require("../../../assets/TempUserImage.jpeg")}
         />
         <h2 className={"flex-1 w-full items-start"}>{friend.username}</h2>

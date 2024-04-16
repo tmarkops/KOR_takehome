@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
-import {
-  useCreateStatusUpdateMutation,
-  useRespondFriendRequestMutation,
-} from "../../../store/services/api";
+import { useCreateStatusUpdateMutation } from "../../../store/services/api";
 import { updateStatus } from "../../../store/features/user/userSlice";
 import { openLoginModal } from "../../../store/features/modal/modalSlice";
 
@@ -30,6 +27,7 @@ export const UpdateStatusBox = () => {
     >
       <img
         className={"h-24 w-24 rounded-full"}
+        alt={"User"}
         src={require("../../../assets/TempUserImage.jpeg")}
       />
       <div className={"w-full px-20"}>

@@ -15,6 +15,7 @@ export const NotificationRow = ({
       >
         <img
           className={"h-14 w-14 rounded-full"}
+          alt={"User"}
           src={require("../../../assets/TempUserImage.jpeg")}
         />
         <p className={"text-lg"}>{notification.message}</p>

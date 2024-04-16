@@ -10,7 +10,6 @@ import { UserModal } from "./Modals/User/UserModal";
 import { Polling } from "./Components/Polling";
 import { Notifications } from "./Components/Notifications/Notifications";
 import { Friends } from "./Components/Friends/Friends";
-import { FriendFeed } from "./Components/Friends/FriendFeed";
 import { Feed } from "./Components/Feed/Feed";
 
 function App() {

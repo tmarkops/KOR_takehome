@@ -1,4 +1,4 @@
-import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { useAppSelector } from "../../store/hooks";
 import { useEffect } from "react";
 import { useGetUsersQuery } from "../../store/services/api";
 import { UserRow } from "./Components/UserRow";
@@ -6,14 +6,14 @@ import { UserRow } from "./Components/UserRow";
 export const Users = () => {
   const curUser = useAppSelector((state) => state.user);
 
-  const { data, isLoading, isSuccess, refetch } = useGetUsersQuery(null);
+  const { data, isSuccess, refetch } = useGetUsersQuery(null);
 
   //TODO: add Loading component
 
   useEffect(() => {
     // to repopulate the "allUsers" state when the store is refreshed on sign out
     refetch();
-  }, [curUser]);
+  }, [curUser, refetch]);
 
   return (
     <div

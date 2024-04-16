@@ -1,9 +1,4 @@
-import {
-  AnyAction,
-  combineReducers,
-  configureStore,
-  PayloadAction,
-} from "@reduxjs/toolkit";
+import { Action, combineReducers, configureStore } from "@reduxjs/toolkit";
 import userReducer from "./features/user/userSlice";
 import modalReducer from "./features/modal/modalSlice";
 import allUsersReducer from "./features/allUsers/allUsersSlice";
@@ -23,7 +18,7 @@ const appReducer = combineReducers({
   notifications: notificationsReducer,
   feed: feedReducer,
 });
-const reducerProxy = (state: any, action: AnyAction) => {
+const reducerProxy = (state: any, action: Action) => {
   if (action.type === "logout/LOGOUT") {
     return appReducer(undefined, action);
   }

@@ -6,6 +6,7 @@ export const StatusRow = ({ updateStatus }: { updateStatus: StatusUpdate }) => {
       <div className={"w-full flex flex-row items-center px-10 gap-10 py-5"}>
         <img
           className={"h-14 w-14 rounded-full"}
+          alt={"User"}
           src={require("../../../assets/TempUserImage.jpeg")}
         />
         <p>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FriendsHeader } from "./Components/FriendsHeader";
 import { useAppSelector } from "../../store/hooks";
 import { FriendRow } from "./Components/FriendRow";

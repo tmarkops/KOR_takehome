@@ -6,6 +6,9 @@
 /.pnp
 .pnp.js
 
+#db
+/backend/postgres
+
 # testing
 /coverage
 
