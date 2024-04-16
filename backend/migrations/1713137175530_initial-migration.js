@@ -4,7 +4,7 @@ exports.shorthands = undefined;
 
 exports.up = (pgm) => {
   pgm.createType("notification_type", [
-    "post",
+    "status_update",
     "friend_request",
     "friend_request_accepted",
   ]);
@@ -83,10 +83,9 @@ exports.up = (pgm) => {
       type: "notification_type",
       notNull: true,
     },
-    related_id: {
-      type: "integer",
+    message: {
+      type: "text",
       notNull: true,
-      comment: "ID of the related status update or friend_request",
     },
     created_at: { type: "timestamp", default: pgm.func("current_timestamp") },
   });

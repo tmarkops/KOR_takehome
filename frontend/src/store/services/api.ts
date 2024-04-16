@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { User } from "../../types/types";
+import { MyNotification, User } from "../../types/types";
 
 export const myApi = createApi({
   reducerPath: "api",
@@ -43,11 +43,38 @@ export const myApi = createApi({
         return response.user;
       },
     }),
+    respondFriendRequest: builder.mutation<
+      User,
+      {
+        senderUserId: number;
+        receiverUserId: number;
+        answer: "accept" | "decline";
+      }
+    >({
+      query: ({ senderUserId, receiverUserId, answer }) => ({
+        url: "friends/request/respond",
+        method: "POST",
+        body: {
+          senderUserId: senderUserId,
+          receiverUserId: receiverUserId,
+          answer: answer,
+        },
+      }),
+      transformResponse: (response: any, meta, arg) => {
+        if (!response.success || !response.user) {
+          throw new Error(response.message || "Error processing response");
+        }
+        return response.user;
+      },
+    }),
     getIncomingFriendRequests: builder.query<User[], number>({
       query: (userId) => `friends/request/incoming/${userId}`,
     }),
     getOutgoingFriendRequests: builder.query<User[], number>({
       query: (userId) => `friends/request/outgoing/${userId}`,
+    }),
+    getNotifications: builder.query<MyNotification[], number>({
+      query: (userId) => `notifications/${userId}`,
     }),
   }),
 });
@@ -58,4 +85,6 @@ export const {
   useCreateFriendRequestMutation,
   useGetIncomingFriendRequestsQuery,
   useGetOutgoingFriendRequestsQuery,
+  useGetNotificationsQuery,
+  useRespondFriendRequestMutation,
 } = myApi;

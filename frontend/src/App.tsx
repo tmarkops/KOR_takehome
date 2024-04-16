@@ -9,6 +9,9 @@ import { Sidebar } from "./Components/Sidebar/Sidebar";
 import { Users } from "./Components/Users/Users";
 import { UserModal } from "./Modals/User/UserModal";
 import { Polling } from "./Components/Polling";
+import { Notifications } from "./Components/Notifications/Notifications";
+import { Friends } from "./Components/Friends/Friends";
+import { FriendFeed } from "./Components/Friends/FriendFeed";
 
 function App() {
   const curModal = useAppSelector((state) => state.modal);
@@ -21,7 +24,11 @@ function App() {
         <div className={"overflow-scroll w-full h-full"}>
           <Routes>
             <Route path={"/"} element={<Users />} />
-            <Route path={"/friends"} element={<Home />} />
+            <Route path={"/friends"} element={<Friends />}>
+              <Route path={"friends/:id"} element={<FriendFeed />} />
+            </Route>
+            <Route path={"/notifications"} element={<Notifications />} />
+            <Route path={"/feed"} element={<Home />} />
           </Routes>
         </div>
         <Polling />

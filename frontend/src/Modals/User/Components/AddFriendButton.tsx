@@ -24,7 +24,6 @@ export const AddFriendButton = ({ recipientUser }: { recipientUser: User }) => {
 
   const handleAddFriend = async () => {
     if (!user.id) {
-      console.log("hi");
       return dispatch(openLoginModal());
     }
     //optimistic update first

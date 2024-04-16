@@ -3,6 +3,7 @@ import userReducer from "./features/user/userSlice";
 import modalReducer from "./features/modal/modalSlice";
 import allUsersReducer from "./features/allUsers/allUsersSlice";
 import friendsReducer from "./features/friends/friendsSlice";
+import notificationsReducer from "./features/notifications/notificationsSlice";
 
 import { myApi } from "./services/api";
 export const store = configureStore({
@@ -12,6 +13,7 @@ export const store = configureStore({
     modal: modalReducer,
     allUsers: allUsersReducer,
     friends: friendsReducer,
+    notifications: notificationsReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(myApi.middleware),

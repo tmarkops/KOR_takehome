@@ -29,6 +29,14 @@ export const friendsSlice = createSlice({
     addOutgoingRequest: (state, action: PayloadAction<User>) => {
       state.outgoingRequests.push(action.payload);
     },
+    addFriend: (state, action: PayloadAction<User>) => {
+      state.friends.push(action.payload);
+    },
+    deleteIncomingRequest: (state, action: PayloadAction<User>) => {
+      state.incomingRequests = state.incomingRequests.filter(
+        (request) => request.id !== action.payload.id,
+      );
+    },
   },
 });
 
@@ -38,6 +46,8 @@ export const {
   addOutgoingRequest,
   setOutgoingRequests,
   setIncomingRequests,
+  addFriend,
+  deleteIncomingRequest,
 } = friendsSlice.actions;
 
 export default friendsSlice.reducer;
