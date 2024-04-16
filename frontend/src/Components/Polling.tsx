@@ -59,6 +59,7 @@ export const Polling = () => {
     incomingRequests,
     notifications,
     statusUpdates,
+    user,
   ]);
 
   return null;

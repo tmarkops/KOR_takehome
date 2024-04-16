@@ -20,22 +20,17 @@ export const LoginModal = () => {
     }
   };
 
-  const setUserCloseModal = () => {
-    if (!result.isSuccess || !result.data) {
-      return console.log("mutation didn't return a user");
-    }
-    dispatch(
-      setUser({
-        id: result.data.id,
-        username: result.data.username,
-        status: result.data.status,
-      }),
-    );
-    dispatch(closeModal());
-  };
-
   useEffect(() => {
-    setUserCloseModal();
+    if (result.data) {
+      dispatch(
+        setUser({
+          id: result.data.id,
+          username: result.data.username,
+          status: result.data.status,
+        }),
+      );
+      dispatch(closeModal());
+    }
   }, [result.isSuccess]);
 
   return (

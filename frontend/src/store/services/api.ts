@@ -12,7 +12,7 @@ export const myApi = createApi({
       query: (username) => ({
         url: "users",
         method: "POST",
-        body: { username },
+        body: { username: username },
       }),
       transformResponse: (response: any, meta, arg) => {
         if (!response.success || !response.user) {

@@ -8,13 +8,13 @@ export const UserRow = ({ user }: { user: User }) => {
   return (
     <div
       className={
-        "w-full h-36 flex flex-row items-center px-10 gap-10 hover:bg-gray-200 "
+        "w-full h-32 min-h-32 flex flex-row items-center px-10 gap-10 hover:bg-gray-200 rounded-lg"
       }
       onClick={() => dispatch(openUserModal({ user: user }))}
     >
       {/*<div className={"flex-1 w-full h-full flex items-center"}>*/}
       <img
-        className={"h-20 w-20"}
+        className={"h-20 w-20 rounded-full"}
         src={require("../../../assets/TempUserImage.jpeg")}
       />
       {/*</div>*/}

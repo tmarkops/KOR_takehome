@@ -5,29 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de12244f-0d77-4d90-ae4a-dd9e75b1a0ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Feed/Components/FeedBox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Feed/Components/StatusRow.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Feed/Components/UpdateStatusBox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Feed/Feed.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/features/feed/feedSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Header/Components/LoggedInButtons.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/1249" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/1249" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/16387" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/16387" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/16388" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/16388" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/16392" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/16392" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2604" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2604" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2608" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2608" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2656" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2656" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2657" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2657" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2673" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2673" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/2674" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/2674" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/postgres/data/base/16384/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/base/16384/pg_internal.init" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/postgres/data/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/global/pg_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/postgres/data/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/global/pg_internal.init" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/postgres/data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/postgres/data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/pg_xact/0000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/postgres/data/postmaster.pid" beforeDir="false" afterPath="$PROJECT_DIR$/backend/postgres/data/postmaster.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/util/db_functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/util/db_functions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Feed/Components/UpdateStatusBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Feed/Components/UpdateStatusBox.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendRow.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendsHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/Components/FriendsHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Home/Home.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Friends/Friends.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Friends/Friends.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Header/Components/LoginButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Header/Components/LoginButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Notifications/Components/NotificationRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Notifications/Components/NotificationRow.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/Notifications/Notifications.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Notifications/Notifications.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/Polling.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Polling.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Sidebar/Components/SidebarButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Sidebar/Components/SidebarButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Users/Components/UserRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Users/Components/UserRow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Users/Users.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Modals/Login/LoginModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Modals/Login/LoginModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/features/user/userSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/features/user/userSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Modals/User/Components/AddFriendButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Modals/User/Components/AddFriendButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Modals/User/UserModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Modals/User/UserModal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/services/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/services/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,28 +75,28 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/tommymarkopoulos/Desktop/coding/Git_Repos/KOR_takehome/app&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/tommymarkopoulos/Desktop/coding/Git_Repos/KOR_takehome/app/frontend/node_modules/prettier&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/tommymarkopoulos/Desktop/coding/Git_Repos/KOR_takehome/app/frontend/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/tommymarkopoulos/Desktop/coding/Git_Repos/KOR_takehome/app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/tommymarkopoulos/Desktop/coding/Git_Repos/KOR_takehome/app/backend/node_modules/prettier",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/tommymarkopoulos/Desktop/coding/Git_Repos/KOR_takehome/app/backend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/Components" />
@@ -107,7 +123,9 @@
       <workItem from="1713164525876" duration="3136000" />
       <workItem from="1713195833285" duration="22030000" />
       <workItem from="1713224862536" duration="255000" />
-      <workItem from="1713225119218" duration="22630000" />
+      <workItem from="1713225119218" duration="24117000" />
+      <workItem from="1713287621410" duration="457000" />
+      <workItem from="1713288091636" duration="9187000" />
     </task>
     <servers />
   </component>

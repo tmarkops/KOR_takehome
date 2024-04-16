@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 
 export const FriendRow = ({ friend }: { friend: User }) => {
   return (
-    <>
-      <div className={"w-full h-36 flex flex-row items-center px-10 gap-10"}>
+    <div className={"flex flex-col"}>
+      <div
+        className={
+          "w-full h-32 min-h-32 flex flex-row items-center px-10 gap-10"
+        }
+      >
         <img
           className={"h-20 w-20"}
           src={require("../../../assets/TempUserImage.jpeg")}
@@ -13,6 +17,6 @@ export const FriendRow = ({ friend }: { friend: User }) => {
         <p>{friend.status}</p>
       </div>
       <div className={"h-0.5 bg-gray-200 w-full"}></div>
-    </>
+    </div>
   );
 };

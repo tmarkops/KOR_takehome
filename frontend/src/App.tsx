@@ -17,11 +17,11 @@ function App() {
   const curModal = useAppSelector((state) => state.modal);
 
   return (
-    <div className={"h-screen max-h-full w-full flex flex-col overflow-hidden"}>
+    <div className={"h-screen w-full flex flex-col overflow-hidden"}>
       <Header />
-      <div className={"flex flex-row h-full w-full"}>
+      <div className={"flex flex-row h-full w-full overflow-hidden"}>
         <Sidebar />
-        <div className={"overflow-scroll w-full h-full"}>
+        <div className={"w-full h-full max-h-full overflow-y-scroll"}>
           <Routes>
             <Route path={"/"} element={<Users />} />
             <Route path={"/friends"} element={<Friends />} />

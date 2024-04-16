@@ -201,6 +201,7 @@ export const getNotifications = async (userId: number) => {
   const notifications = await db
     .selectFrom("notification")
     .where("user_id", "=", userId)
+    .orderBy("created_at desc")
     .select(["type", "message"])
     .execute();
 
@@ -269,6 +270,9 @@ export const createStatusUpdateNotifications = async (userId: number) => {
 
 export const getStatusUpdatesByUserId = async (userId: number) => {
   const friends = await getFriendsByUserId(userId);
+  if (friends.length === 0) {
+    return [];
+  }
   const friendsUserIds = friends.map((friend) => friend.id);
   const statusUpdates = await db
     .selectFrom("status_update")

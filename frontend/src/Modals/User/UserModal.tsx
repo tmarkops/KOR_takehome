@@ -1,8 +1,5 @@
-import { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { closeModal } from "../../store/features/modal/modalSlice";
-import { useLoginOrCreateUserMutation } from "../../store/services/api";
-import { setUser } from "../../store/features/user/userSlice";
 import { AddFriendButton } from "./Components/AddFriendButton";
 
 export const UserModal = () => {
@@ -15,37 +12,6 @@ export const UserModal = () => {
   );
 
   const dispatch = useAppDispatch();
-  const [loginOrCreate, result] = useLoginOrCreateUserMutation();
-
-  const handleAddFriend = async () => {};
-
-  // const submit = async () => {
-  //   //TODO: validation on the input
-  //
-  //   try {
-  //     await loginOrCreate(curText);
-  //   } catch (e) {
-  //     // TODO: surface error. ex: use a Toast
-  //     console.log("Error logging/creating user");
-  //   }
-  // };
-
-  // const setUserCloseModal = () => {
-  //   if (!result.isSuccess || !result.data) {
-  //     return console.log("mutation didn't return a user");
-  //   }
-  //   dispatch(
-  //     setUser({
-  //       id: result.data.id,
-  //       username: result.data.username,
-  //     }),
-  //   );
-  //   dispatch(closeModal());
-  // };
-  //
-  // useEffect(() => {
-  //   setUserCloseModal();
-  // }, [result.isSuccess]);
 
   if (!curModal.user) {
     dispatch(closeModal());

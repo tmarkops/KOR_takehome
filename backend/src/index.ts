@@ -58,8 +58,10 @@ app.post(
           user: existingUser,
         });
       }
-
       const newUser = await createUser(username);
+      if (!newUser) {
+        throw new Error("Error creating new user");
+      }
 
       return res.status(201).send({
         success: true,

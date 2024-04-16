@@ -8,9 +8,9 @@ export const FriendsHeader = ({
   >;
 }) => {
   return (
-    <div className={`w-full h-20 flex flex-row`}>
+    <div className={`w-full h-20 min-h-20 flex flex-row`}>
       <div
-        className={`flex-1 flex items-center rounded-md justify-center bg-gray-100,
+        className={`flex-1 flex items-center rounded-sm justify-center cursor-pointer bg-gray-100,
         ${requestsToggle === "friends" ? "" : "bg-gray-200"}
         `}
         onClick={() => setRequestsToggle("friends")}
@@ -18,7 +18,7 @@ export const FriendsHeader = ({
         <p>Your Friends</p>
       </div>
       <div
-        className={`flex-1 flex items-center rounded-md justify-center bg-gray-100,
+        className={`flex-1 flex items-center rounded-sm justify-center cursor-pointer bg-gray-100,
         ${requestsToggle === "requests" ? "" : "bg-gray-200"}
         `}
         onClick={() => setRequestsToggle("requests")}

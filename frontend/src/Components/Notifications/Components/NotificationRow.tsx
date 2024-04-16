@@ -10,7 +10,7 @@ export const NotificationRow = ({
     <Link to={notification.type === "status_update" ? "/feed" : "/friends"}>
       <div
         className={
-          "flex flex-row gap-7 w-full h-20 rounded-lg hover:bg-gray-200 items-center justify-start px-10"
+          "flex flex-row gap-7 w-full h-20 hover:bg-neutral-300 items-center justify-start px-10 py-5"
         }
       >
         <img
@@ -19,6 +19,7 @@ export const NotificationRow = ({
         />
         <p className={"text-lg"}>{notification.message}</p>
       </div>
+      <div className={"h-0.5 bg-white w-full"}></div>
     </Link>
   );
 };

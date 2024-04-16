@@ -5,6 +5,7 @@ import {
   useRespondFriendRequestMutation,
 } from "../../../store/services/api";
 import { updateStatus } from "../../../store/features/user/userSlice";
+import { openLoginModal } from "../../../store/features/modal/modalSlice";
 
 export const UpdateStatusBox = () => {
   const curUser = useAppSelector((state) => state.user);
@@ -15,7 +16,7 @@ export const UpdateStatusBox = () => {
 
   const handleUpdateStatus = async () => {
     if (!curUser.id) {
-      throw new Error("Trying to update status being logged in");
+      return dispatch(openLoginModal());
     }
     dispatch(updateStatus(newStatus));
     await createStatusUpdateMutation({ userId: curUser.id, status: newStatus });

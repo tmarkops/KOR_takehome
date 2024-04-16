@@ -6,13 +6,22 @@ import {
   useGetFriendsQuery,
 } from "../../../store/services/api";
 import { skipToken } from "@reduxjs/toolkit/dist/query/react";
-import { openLoginModal } from "../../../store/features/modal/modalSlice";
+import {
+  closeModal,
+  openLoginModal,
+} from "../../../store/features/modal/modalSlice";
 import { userExistsInUserArray } from "../../../util/helpers";
+import { Link } from "react-router-dom";
 
 export const AddFriendButton = ({ recipientUser }: { recipientUser: User }) => {
   const user = useAppSelector((state) => state.user);
+  const friends = useAppSelector((state) => state.friends.friends);
+
   const outgoingFriendRequests = useAppSelector(
     (state) => state.friends.outgoingRequests,
+  );
+  const incomingFriendRequests = useAppSelector(
+    (state) => state.friends.incomingRequests,
   );
   const dispatch = useAppDispatch();
   const [createFriendRequest, result] = useCreateFriendRequestMutation();
@@ -21,6 +30,13 @@ export const AddFriendButton = ({ recipientUser }: { recipientUser: User }) => {
     recipientUser,
     outgoingFriendRequests,
   );
+
+  const sentYouFriendRequest = userExistsInUserArray(
+    recipientUser,
+    incomingFriendRequests,
+  );
+
+  const alreadyFriends = userExistsInUserArray(recipientUser, friends);
 
   const handleAddFriend = async () => {
     if (!user.id) {
@@ -36,18 +52,44 @@ export const AddFriendButton = ({ recipientUser }: { recipientUser: User }) => {
     });
   };
 
-  return alreadySentFriendRequest ? (
-    <div className={"w-36 h-10 flex justify-center items-center"}>
-      <p className={"italic text-blue-600"}>Request sent</p>
-    </div>
-  ) : (
-    <button
-      className={
-        "w-36 h-10 rounded-lg bg-blue-600 flex justify-center items-center"
-      }
-      onClick={handleAddFriend}
-    >
-      <p className={"text-white"}>Add Friend</p>
-    </button>
-  );
+  const renderAppropriateTextOrButton = () => {
+    if (alreadyFriends) {
+      return (
+        <div className={"w-36 h-10 flex justify-center items-center"}>
+          <p className={"italic text-blue-600"}>Already Friends</p>
+        </div>
+      );
+    } else if (alreadySentFriendRequest) {
+      return (
+        <div className={"w-36 h-10 flex justify-center items-center"}>
+          <p className={"italic text-blue-600"}>Request sent</p>
+        </div>
+      );
+    } else if (sentYouFriendRequest) {
+      return (
+        <Link to={"friends"} state={{ initialToggle: "requests" }}>
+          <button
+            className={
+              "px-3 h-10 rounded-lg bg-blue-600 flex justify-center items-center"
+            }
+            onClick={() => dispatch(closeModal())}
+          >
+            <p className={"text-white"}>Respond to their request</p>
+          </button>
+        </Link>
+      );
+    }
+    return (
+      <button
+        className={
+          "px-5 h-10 rounded-lg bg-blue-600 flex justify-center items-center"
+        }
+        onClick={handleAddFriend}
+      >
+        <p className={"text-white"}>Add Friend</p>
+      </button>
+    );
+  };
+
+  return renderAppropriateTextOrButton();
 };

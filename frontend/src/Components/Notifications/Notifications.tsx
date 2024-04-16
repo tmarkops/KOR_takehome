@@ -7,15 +7,27 @@ export const Notifications = () => {
   );
 
   return (
-    <div className={"flex flex-col h-full w-full"}>
+    <div
+      className={
+        "flex flex-col h-full w-full px-10 py-5 overflow-y-scroll max-h-screen"
+      }
+    >
       <div
-        className={"flex w-full h-24 bg-gray-400 items-center justify-center"}
+        className={
+          "flex w-full h-24 min-h-24 bg-neutral-400 items-center justify-center rounded-lg sticky-top"
+        }
       >
         <h1 className={"text-2xl font-bold"}>Notifications</h1>
       </div>
-      {notifications.map((notif, i) => (
-        <NotificationRow key={i} notification={notif} />
-      ))}
+      <div
+        className={
+          "w-full bg-neutral-200 flex flex-col mt-5 rounded-lg overflow-scroll max-h-full"
+        }
+      >
+        {notifications.map((notif, i) => (
+          <NotificationRow key={i} notification={notif} />
+        ))}
+      </div>
     </div>
   );
 };
