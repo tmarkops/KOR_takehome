@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FriendsHeader } from "./Components/FriendsHeader";
 import { useAppSelector } from "../../store/hooks";
 import { FriendRow } from "./Components/FriendRow";
@@ -13,6 +13,7 @@ export const Friends = () => {
   const [requestsToggle, setRequestsToggle] = useState<"friends" | "requests">(
     initialToggle || "friends",
   );
+
   return (
     <div
       className={
@@ -37,7 +38,7 @@ export const Friends = () => {
         }
       >
         {requestsToggle === "friends" ? (
-          friends.map((friend) => <FriendRow friend={friend} />)
+          friends.map((friend) => <FriendRow key={friend.id} friend={friend} />)
         ) : (
           <FriendRequests />
         )}
