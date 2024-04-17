@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start-dev": "docker compose up -d && tsx watch --clear-screen=false src/index.ts",
+    "start-dev": "docker-compose up -d && tsx watch --clear-screen=false src/index.ts",
     "migrate": "DATABASE_URL=$(./scripts/get_db_url.sh) node-pg-migrate",
     "test": "echo \"Error: no test specified\" && exit 1",
     "gen": "kysely-codegen --url $(./scripts/get_db_url.sh)"
